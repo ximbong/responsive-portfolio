@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+   <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet" type='text/css'>
+   <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+<style>
+
+body {
+  background-color: #F2F2F2;
+  margin: 80px 0;
+}
+
+
+.left-content {
+  padding-right: 0;
+}
+
+.right-content {
+  background-color: white;
+}
+
+.left-list {
+  width: 100%;
+  background-color: #33373d;
+  height: 52px;
+  line-height: 52px;
+  padding: 0 20px;
+  border-bottom: 1px solid black;
+  color: white;
+  font-family:Arial;
+}
+
+.left-list i {
+  font-size:25px;
+  line-height: 52px;
+}
+
+.left-list span {
+  float:right;
+  font-size:14px;
+}
+
+.big-heading {
+  padding: 40px 0 15px 40px;
+  border-bottom: 1px solid black;
+  margin-top:0;
+  text-transform:uppercase;
+  font-family:Sansita;
+}
+
+.headings {
+  margin-bottom: 30px;
+}
+
+.info {
+  padding: 40px 40px 15px 40px;
+}
+
+.list {
+  padding: 0;
+  border-width: 1px 1px 0 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+.list li {
+  text-align: center;
+
+  border-bottom: 1px solid black;
+}
+
+.para {
+  margin-bottom: 35px;
+}
+
+.name {
+  width: 30%;
+  border-right: 1px solid black;
+  display: inline-block;
+  padding: 8px;
+  font-weight:600;
+}
+
+.value {
+  background-color: #F2F2F2;
+  display: inline-block;
+  width: 70%;
+  padding: 7px;
+}
+
+.parts {
+  margin-bottom: 30px;
+}
+
+.progress {
+  width: 100%;
+  height: 16px;
+  margin: 7px 0 14px 0;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  background-color: white;
+}
+
+/* .percentage {
+  background-color: #efefef;
+} */
+
+.info .skill h6 {
+  text-transform: uppercase;
+  font-weight:600;
+  color:#666666;
+}
+
+.skill-tag {
+  text-align: center;
+
+
+
+  position: absolute;
+  top:80px;
+  left: -15px;
+  padding: 5px 25px;
+
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #666666;
+}
+
+.skill-block {
+  margin-bottom: 60px;
+}
+
+.design-percentage {
+  background-color: #efefef;
+   height: 100%;
+}
+
+#tag1 {
+  border: 1px dashed #efefef;
+}
+
+.coding-percentage {
+  background-color: #c3512f;
+     height: 100%;
+}
+
+#tag2 {
+  border: 1px dashed #c3512f;
+}
+
+.assets-percentage {
+  background-color: #33373d;
+     height: 100%;
+}
+
+#tag3 {
+  border: 1px dashed #33373d;
+}
+
+.active {
+  background-color: #c3512f;
+}
+
+.timeline ul {
+  position:relative;
+ padding:0;
+}
+
+.timeline ul:before {
+  content:'';
+  position:absolute;
+  width:4px;
+  height:100%;
+  top:0;
+ left:0;
+  background:#ddd;
+}
+
+.timeline ul li {
+  padding:30px 20px;
+}
+
+.timeline ul div {
+  padding-left:15px;
+}
+
+.timeline ul li .time {
+  color:#aaa;
+  position:absolute;
+  left:-15px;
+  background-color:white;
+  font-weight:bold;
+}
+
+.cap {
+  position:absolute;;
+  left:-25px;
+  font-size:20px;
+  top:0;
+  background-color:white;
+  border:2px solid #aaa;
+  padding:15px 12px;
+  border-radius:35px;
+
+}
+
+.major {
+  margin-left:10px;
+  padding:5px;
+  font-style:italic;
+}
+
+.major i {
+  margin-right:5px;
+}
+
+.hobby {
+  font-size:50px;
+ display:block;
+  margin-bottom:15px;
+  color:#c3512f
+}
+
+.hobby-div {
+
+  text-align:center;
+  padding-bottom:40px;
+}
+
+.hobby-div span {
+  text-transform:uppercase;
+  font-weight:600;
+}
+
+.left-list:hover {
+  background-color: #ff9900;
+}
+
+.left-list span {
+  -webkit-animation-duration:1s;
+  -webkit-animation-iteration-count:1;
+}
+@media only screen and (max-width: 1000px) {
+
+  .left-content {
+    padding-right: 15px;
+  }
+
+  .left-list{
+  display:inline-block;
+    width:25%;
+    border-bottom:0;
+    margin-bottom:30px;
+/*    margin-right:-4px; */
+  }
+  .skill-tag {
+    width: 100%;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    top: 10px;
+    left: 0;
+    padding: 0;
+  }
+
+  .left-list span {
+    display:none;
+  }
+
+  .left-list {
+    text-align:center;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+   <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet" type='text/css'>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-xs-12 left-content">
+        <img src="http://demo.mutationmedia.net/SPLIT/img/profile.jpg" style="width:100%; height:auto;" alt="">
+
+
+        <div class="left-list active"><i class="fa fa-user-o" aria-hidden="true"></i><span>ABOUT</span></div><div class="left-list"><i class="fa fa-camera" aria-hidden="true"></i><span>PORTFOLIO</span></div><div class="left-list"><i class="fa fa-commenting-o" aria-hidden="true"></i><span>BLOG</span></div><div class="left-list"><i class="fa fa-address-book" aria-hidden="true"></i><span>CONTACT</span></div>
+
+      </div>
+
+      <div class="col-md-9 col-xs-12">
+        <div class="right-content ">
+          <!--         part1 -->
+          <div class="parts">
+            <h3 class="big-heading">Who am I</h3>
+            <div class="info">
+              <div class="headings">
+                <h2>Hai Truong</h2>
+                <h3>Web designer / Web developer</h3>
+              </div>
+              <div class="row para">
+                <div class="col-md-6">
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.</p>
+                </div>
+                <div class="col-md-6">
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="list">
+                    <li class="list-unstyled"><span class="name">Name</span><span class="value">Hai Truong</span></li>
+                    <li class="list-unstyled"><span class="name">Age</span><span class="value">20</span></li>
+                    <li class="list-unstyled"><span class="name">Address</span><span class="value">Kirstinharju 1A 4</span></li>
+
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul class="list">
+                    <li class="list-unstyled"><span class="name">Email</span><span class="value">hai.truong2@metropolia.fi</span></li>
+                    <li class="list-unstyled"><span class="name">Phone</span><span class="value">+358469545885</span></li>
+                    <li class="list-unstyled"><span class="name">Nationality</span><span class="value">Vietnamese</span></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!--         part2 -->
+          <div class="parts" style="margin-bottom:0;">
+            <h3 class="big-heading"> Professional skills</h3>
+
+            <div class="info">
+              <!--             design -->
+              <div class="skill-block">
+                <div class="row">
+                  <div class="col-md-11">
+                    <div class="skill">
+                      <h6>Photoshop</h6>
+                      <div class="progress">
+                        <div class="design-percentage" style="width:30%;"></div>
+
+                      </div>
+
+                      <h6>Illustrator</h6>
+                      <div class="progress">
+                        <div class="design-percentage" style="width:60%;"></div>
+
+                      </div>
+
+                      <h6>Indesign</h6>
+                      <div class="progress">
+                        <div class="design-percentage" style="width:45%;"></div>
+
+                      </div>
+
+
+                    </div>
+                  </div>
+                  <div class="col-md-1 a">
+                    <div class="skill-tag" id="tag1">
+
+                      <span>Design</span>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--             coding -->
+              <div class="skill-block">
+                <div class="row">
+                  <div class="col-md-11">
+                    <div class="skill">
+                      <h6>Html/css</h6>
+                      <div class="progress">
+                        <div class="coding-percentage" style="width:80%;"></div>
+
+                      </div>
+
+                      <h6>Java</h6>
+                      <div class="progress">
+                        <div class="coding-percentage" style="width:40%;"></div>
+
+                      </div>
+
+                      <h6>Javascript/Jquery</h6>
+                      <div class="progress">
+                        <div class="coding-percentage" style="width:80%;"></div>
+
+                      </div>
+
+
+                    </div>
+                  </div>
+                  <div class="col-md-1 a">
+                    <div class="skill-tag" id="tag2">
+                      <span>Coding</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--             assets -->
+              <div class="skill-block">
+                <div class="row">
+                  <div class="col-md-11">
+                    <div class="skill">
+                      <h6>RESPONSIBLE</h6>
+                      <div class="progress">
+                        <div class="assets-percentage" style="width:85%;"></div>
+
+                      </div>
+
+                      <h6>Multitasking</h6>
+                      <div class="progress">
+                        <div class="assets-percentage" style="width:70%;"></div>
+
+                      </div>
+
+                      <h6>Creative</h6>
+                      <div class="progress">
+                        <div class="assets-percentage" style="width:65%;"></div>
+
+                      </div>
+
+
+                    </div>
+                  </div>
+                  <div class="col-md-1 a">
+                    <div class="skill-tag" id="tag3">
+                      <span>Design</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="parts">
+            <h3 class="big-heading">Education</h3>
+            <div class="timeline info" style="padding-left:60px;">
+              <ul>
+                <li class="list-unstyled">
+                  <i class="fa fa-graduation-cap cap" aria-hidden="true"></i>
+                </li>
+
+                <li class="list-unstyled">
+                  <span class="time" style="color:#c3512f;"> 2017</span>
+                  <div><strong>Helsinki Metropolia University of Applied Sciences, Finland </strong></div>
+                  <div class="major"><i class="fa fa-book" aria-hidden="true"></i>Information Technology</div>
+                </li>
+
+                <li class="list-unstyled">
+                  <span class="time"> 2014</span>
+                  <div><strong>Foreign Trade University , Vietnam</strong></div>
+                  <div class="major"><i class="fa fa-book" aria-hidden="true"></i>International Business</div>
+                </li>
+
+                <li class="list-unstyled">
+                  <span class="time"> 2013</span>
+                  <div><strong>Nguyen Khuyen High school, Vietnam</strong></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="parts">
+            <h3 class="big-heading"> Hobbies & Interests</h3>
+            <div class="info">
+              <div class="row">
+                <div class="col-xs-6 col-md-4 hobby-div"><i class="fa fa-music hobby" aria-hidden="true"></i><span>Music</span></div>
+                <div class="col-xs-6 col-md-4 hobby-div"><i class="fa fa-bicycle hobby" aria-hidden="true"></i></i><span>Sport</span></div>
+                <div class="col-xs-6 col-md-4 hobby-div"><i class="fa fa-camera hobby" aria-hidden="true"></i><span>Photography</span></div>
+                <div class="col-xs-6 col-md-4 hobby-div"><i class="fa fa-pencil hobby" aria-hidden="true"></i><span>Writing</span></div>
+                <div class="col-xs-6 col-md-4 hobby-div"><i class="fa fa-plane hobby" aria-hidden="true"></i><span>Travel</span></div>
+                <div class="col-xs-6 col-md-4 hobby-div"><i class="fa fa-cutlery hobby" aria-hidden="true"></i><span>Cooking</span></div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
